@@ -1,7 +1,12 @@
 dask
+dask.dataframe
 streamlit
 plotly
+plotly.express
+plotly.graph_objects
 matplotlib
+matplotlib.pyplot
+matplotlib.ticker
 seaborn
 numpy
 pandas
