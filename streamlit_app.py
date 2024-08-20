@@ -14,11 +14,15 @@ from scipy.stats import linregress
 @st.cache_resource
 def load_data():
     flights = dd.read_csv(
-        '/Users/krystian/Desktop/flight-delay-analysis/flights_ready.csv',
+        'https://media.githubusercontent.com/media/krystiantab/mgr/main/flights_ready.csv',
         assume_missing=True,
     )
-    airlines = dd.read_csv('/Users/krystian/Desktop/flight-delay-analysis/airlines.csv')
-    airports = dd.read_csv('/Users/krystian/Desktop/flight-delay-analysis/airports.csv')
+    airlines = dd.read_csv(
+        'https://media.githubusercontent.com/media/krystiantab/mgr/main/airlines.csv'
+    )
+    airports = dd.read_csv(
+        'https://media.githubusercontent.com/media/krystiantab/mgr/main/airports.csv'
+    )
     return flights, airlines, airports
 
 flights, airlines, airports = load_data()
