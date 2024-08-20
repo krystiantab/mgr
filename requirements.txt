@@ -1,9 +1,7 @@
-dask.dataframe
+dask
 streamlit
-plotly.express
-plotly.graph_objects
-matplotlib.pyplot
-matplotlib.ticker
+plotly
+matplotlib
 seaborn
 numpy
 pandas
